@@ -39,9 +39,8 @@ body{
 }
 body, button, input, textarea{
     font-size: clamp(14px, 1.6rem, 2vw);
-    /*Clamp - intervalo de tamanho
+    /*Clamp - intervalo de tamanho para responsividade
     OBS: Quando colocamos font-size no body ele não engloba button, input e nem textArea, desta forma faz-se necessário detalharmos essa estilização.
-    
     */
-    
+    font-family: Poppins ;    
 }
