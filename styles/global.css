@@ -42,5 +42,17 @@ body, button, input, textarea{
     /*Clamp - intervalo de tamanho para responsividade
     OBS: Quando colocamos font-size no body ele não engloba button, input e nem textArea, desta forma faz-se necessário detalharmos essa estilização.
     */
-    font-family: Poppins ;    
+    font-family: 'Open Sans', sans-serif; /*Fonte Padrão*/
+    /*font-family: 'Poppins', sans-serif; - Só será usada em casos especificos*/   
+}
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width:1px;
+    padding:0;
+    margin: -1px;
+    overflow:hidden;
+    clip-path: rec(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
 }
