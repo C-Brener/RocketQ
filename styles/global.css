@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /*Resetando configurações do navegador*/
+}
+html{
+    --black: #0D11AF; 
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --grey-dark: #4D6E77;
+    --grey-blue: #A1B2CD;
+    --grey-medium: #D3D9E2;
+    --grey-light: #E5EAF1;
+    /*
+    Criando Variaveis
+    */
+
+
+}
