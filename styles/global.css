@@ -24,5 +24,24 @@ html{
     Criando Variaveis
     */
 
+    font-size: 62.5%; 
+    /*Por Boa pratica de responsividade trocamos o px por rem 
+        1rem = 16px
+        OBS: Sempre fazer o calculo de conversão de px para rem.
+        Passando padrão de 10px para facilitar no uso do rem.
+    */
+}
 
+body{
+    height: 100vh; /*VIEW HEIGHT - Pegando toda altura da tela de qualquer dispositivo*/
+    /* width: 100vw;  VIEW WIDTH - Pegando toda largura da tela de qualquer dispositivo*/
+    background: var(--background);
+}
+body, button, input, textarea{
+    font-size: clamp(14px, 1.6rem, 2vw);
+    /*Clamp - intervalo de tamanho
+    OBS: Quando colocamos font-size no body ele não engloba button, input e nem textArea, desta forma faz-se necessário detalharmos essa estilização.
+    
+    */
+    
 }
