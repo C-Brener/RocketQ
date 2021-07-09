@@ -45,6 +45,12 @@ body, button, input, textarea{
     font-family: 'Open Sans', sans-serif; /*Fonte Padrão*/
     /*font-family: 'Poppins', sans-serif; - Só será usada em casos especificos*/   
 }
+
+.content{
+    width: 100%;
+    margin:0 auto;
+}
+
 .sr-only{
     position: absolute; /*Fazendo a div ignorar toda existência de layout*/
     height: 1px;

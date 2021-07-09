@@ -1,0 +1,25 @@
+.content{/*Dividindo o content em templates e columns*/
+   display: grid;
+   grid-template-columns: 60% 40%; /*A SOMA DO TEMPLATE COLIMNS SEMPRE TEM QUE DÁ 100%*/  
+   grid-template-rows: 11.4rem 1fr; /*O primeiro parametro esta defindo a largura do header e aponta que o restante que sobrar serár ocupado por ele */
+   grid-template-areas:
+   'header header'
+   'left right' 
+}
+
+header{
+    grid-area: header ;
+}
+#bg{
+    grid-area: left;
+    background:url(../assets/home-bg-img.svg) no-repeat top/contain;
+}
+main{
+ grid-area:right;
+ display: flex;
+ align-items: center;
+
+}
+main .container{
+    width: min(100%); /*Função do css que sempre ira priorizar o minimo*/
+}
