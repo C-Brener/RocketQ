@@ -46,13 +46,13 @@ body, button, input, textarea{
     /*font-family: 'Poppins', sans-serif; - Só será usada em casos especificos*/   
 }
 .sr-only{
-    position: absolute;
+    position: absolute; /*Fazendo a div ignorar toda existência de layout*/
     height: 1px;
     width:1px;
     padding:0;
-    margin: -1px;
-    overflow:hidden;
-    clip-path: rec(0,0,0,0);
+    margin: -1px; /*Escondendo a label numa parte superior do navegador*/
+    overflow:hidden; /*Impedindo ter barra de rolagem desaparecendo com a label*/
+    clip-path: rec(0,0,0,0); /*Fazendo com que a label vá para o canto superior por ter padding, margin, height e widht zerados */
     white-space: nowrap;
     border-width: 0;
 }
