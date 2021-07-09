@@ -12,7 +12,8 @@ header{
 }
 #bg{
     grid-area: left;
-    background:url(../assets/home-bg-img.svg) no-repeat top/contain;
+    background:url('../assets/home-bg-img.svg') no-repeat top/contain;
+    background-position-x: -10rem ;
 }
 main{
  grid-area:right;
@@ -21,5 +22,11 @@ main{
 
 }
 main .container{
-    width: min(100%); /*Função do css que sempre ira priorizar o minimo*/
+    width: min(36.3rem 100%); /*Função do css que sempre ira priorizar o minimo, ou seja, ele sempre priorizara a largura minima, o que signifca que ele optara por qualquer um dos dois parâmetros passados.*/
+}
+main h2{
+    font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
+    color: var(--black);
+    font-size: clamp(20px, 5vw ,2.8rem);
+    margin-bottom: 2.4rem;
 }
