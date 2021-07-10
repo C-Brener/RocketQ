@@ -62,3 +62,26 @@ body, button, input, textarea{
     white-space: nowrap;
     border-width: 0;
 }
+/*---Input and buttons*/
+input, button, .button{ /*Criando uma classe para usar as mesmas configurações depois*/
+    border-radius: 0.8rem;
+    height: 5rem;
+}
+button, .button{
+    font-family: 'Poppins', sans-serif; /* - Só será usada em casos especificos*/  
+    font-weight: 500;
+    line-height:0;
+    
+    display: flex;
+    align-items: center; /*Ele alinha imagens que estão dentro do button*/
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+button:hover, .button:hover{
+filter: brightness(1.2); /*Criando um hover com o parâmetro brightness para aplicar um brilho ao botão*/
+}

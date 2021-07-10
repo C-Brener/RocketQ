@@ -30,3 +30,9 @@ main h2{
     font-size: clamp(20px, 5vw ,2.8rem);
     margin-bottom: 2.4rem;
 }
+input{
+    border: 0.2rem solid var(--grey-blue);
+    padding: 0 1.6rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+}
