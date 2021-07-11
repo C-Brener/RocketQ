@@ -79,9 +79,12 @@ button, .button{
     background: var(--blue);
     color: var(--white);
 
+    transition: filter .2s; /*Colocando uma transição */
+
+
     cursor: pointer;
 }
 
 button:hover, .button:hover{
-filter: brightness(1.2); /*Criando um hover com o parâmetro brightness para aplicar um brilho ao botão*/
+    filter: brightness(1.2); /*Criando um hover com o parâmetro brightness para aplicar um brilho ao botão*/
 }
