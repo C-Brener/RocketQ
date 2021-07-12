@@ -36,3 +36,7 @@ input{
     height: 5rem;
     border-radius: 0.8rem;
 }
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
