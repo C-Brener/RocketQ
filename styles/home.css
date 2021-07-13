@@ -12,17 +12,20 @@ header{
 }
 #bg{
     grid-area: left;
+
     background:url('../assets/home-bg-img.svg') no-repeat top/contain;
-    background-position-x: -10rem ;
+    background-position-x: -10rem;
 }
 main{
- grid-area:right;
- display: flex;
- align-items: center;
+    grid-area:right;
+
+    display: flex;
+    align-items: center;
+    margin-top: -10rem;  /*Ajustando o texto "Entre" + ticket*/ 
 
 }
 main .container{
-    width: min(36.3rem 100%); /*Função do css que sempre ira priorizar o minimo, ou seja, ele sempre priorizara a largura minima, o que signifca que ele optara por qualquer um dos dois parâmetros passados.*/
+    width: min(36.3rem, 100%); /*Função do css que sempre ira priorizar o minimo, ou seja, ele sempre priorizara a largura minima, o que signifca que ele optara por qualquer um dos dois parâmetros passados.*/
 }
 main h2{
     font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
@@ -36,7 +39,29 @@ input{
     height: 5rem;
     border-radius: 0.8rem;
 }
+
 input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
+}
+
+/*Separator Line ou Separação por linha*/
+
+.separator{
+    display: flex; /*Colocando as linhas de separação divididas pelo "ou"*/
+    align-items: center; /*Alinhando o ou e as linhas*/
+}
+.separator div:nth-child(1),
+.separator div:nth-child(3){ /*Usando o primeiro e terceiro filho da div separator*/
+    background: var(--grey-blue);
+    width: 100%;
+    height: 1px;
+}
+.separator div:nth-child(2){
+    font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--grey-blue);
+    padding: 0 1.35rem;
+    line-height: 0;
 }

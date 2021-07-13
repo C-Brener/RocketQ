@@ -33,6 +33,7 @@ html{
 }
 
 body{
+    display: flex;
     height: 100vh; /*VIEW HEIGHT - Pegando toda altura da tela de qualquer dispositivo*/
     /* width: 100vw;  VIEW WIDTH - Pegando toda largura da tela de qualquer dispositivo*/
     background: var(--background);
@@ -104,7 +105,7 @@ button > img
 
 .content header{
     width: 80%;
-    margin: 3.5rem, auto;
+    margin: 3.5rem auto;
 }
 
 .content header img{
