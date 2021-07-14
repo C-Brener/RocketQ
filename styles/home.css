@@ -50,6 +50,7 @@ input, button, .button{
 .separator{
     display: flex; /*Colocando as linhas de separação divididas pelo "ou"*/
     align-items: center; /*Alinhando o ou e as linhas*/
+    margin: 4rem 0;
 }
 .separator div:nth-child(1),
 .separator div:nth-child(3){ /*Usando o primeiro e terceiro filho da div separator*/
@@ -64,4 +65,28 @@ input, button, .button{
     color: var(--grey-blue);
     padding: 0 1.35rem;
     line-height: 0;
+}
+
+/*Create Balls*/
+
+.ball{
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--blue);
+    opacity: 0.2;
+    clip-path: circle();
+
+    position: fixed;
+}
+
+.ball.top{
+    top:-46rem;
+    width: 63.3rem;
+    height: 63.3rem;
+    right: -35rem;
+}
+
+.ball.bottom{
+ bottom: -15rem;
+ right: 5.6rem;
 }
