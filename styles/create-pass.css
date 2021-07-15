@@ -1,0 +1,72 @@
+.content{/*Dividindo o content em templates e columns*/
+   display: grid;
+   grid-template-columns: 60% 40%; /*A SOMA DO TEMPLATE COLIMNS SEMPRE TEM QUE DÁ 100%*/  
+   grid-template-rows: 11.4rem 1fr; /*O primeiro parametro esta defindo a largura do header e aponta que o restante que sobrar serár ocupado por ele */
+   grid-template-areas:
+   'header header'
+   'left right' 
+}
+
+header{
+    grid-area: header ;
+}
+#bg{
+    grid-area: left;
+
+    background:url('../assets/home-bg-img.svg') no-repeat top/contain;
+    background-position-x: -10rem;
+}
+main{
+    grid-area:right;
+
+    display: flex;
+    align-items: center;
+    margin-top: -20rem;  /*Ajustando o texto "Entre" + ticket*/ 
+
+}
+main .container{
+    width: min(36.3rem, 100%); /*Função do css que sempre ira priorizar o minimo, ou seja, ele sempre priorizara a largura minima, o que signifca que ele optara por qualquer um dos dois parâmetros passados.*/
+}
+main h2{
+    font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
+    color: var(--black);
+    font-size: clamp(20px, 5vw ,2.8rem);
+    margin-bottom: 2.4rem;
+}
+input{
+    border: 0.2rem solid var(--grey-blue);
+    padding: 0 1.6rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+}
+
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+        padding-right:10.1 rem ;
+
+}
+/*Create Balls*/
+
+.ball{
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--blue);
+    opacity: 0.2;
+    clip-path: circle();
+
+    position: fixed;
+}
+
+.ball.top{
+    top:-46rem;
+    width: 63.3rem;
+    height: 63.3rem;
+    right: -35rem;
+    grid-area: right;
+}
+
+.ball.bottom{
+ bottom: -15rem;
+ right: 5.6rem;
+}
