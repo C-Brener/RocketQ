@@ -34,3 +34,28 @@ justify-content: space-between ; /*Colocando um espaço entre a logo e os botõe
     width: 2rem;
     height: 2rem;
 }
+
+/* ESTILIZANDO O FORMULARIO DE PERGUNTA */
+#question-form h2{
+    font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--black);
+    margin-bottom: 2.4rem;
+    line-height: 4.2rem;
+}
+#question-form form{
+    border:0.2rem solid var(--grey-blue);
+    padding: 1.6rem;
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+}
+#question-form textarea{
+    /* Pssando o Resize como none para cancelar o manipulamento de tamanho */
+    resize: none;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+#question-form form textarea::placeholder{
+    
+}
