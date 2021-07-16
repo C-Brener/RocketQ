@@ -1,10 +1,14 @@
+.content{
+    max-width: 90%;
+}
 #room header{ 
 /* Como já existe estilização do header no css global criamos uma id room para estilizarmos apenas header dessa pagina */
 width: 100%;
 
 display: flex;
-align-items: center;
-justify-content: center; /*Alinhando na vertical e na horizontal com o justify e align*/
+align-items: center;/*Alinhando na vertical e na horizontal com o justify e align*/
+justify-content: space-between ; /*Colocando um espaço entre a logo e os botões*/
+
 }
 
 #room header .buttons{
