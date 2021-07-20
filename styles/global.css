@@ -89,7 +89,7 @@ button, .button{
 button:hover, .button:hover{
     filter: brightness(1.2); /*Criando um hover com o parâmetro brightness para aplicar um brilho ao botão*/
 }
-button > img 
+button > img, 
 .button > img{
     margin-right: 1rem;
     width: 2rem;
