@@ -26,7 +26,8 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
 }
 
 #room header .buttons .button:nth-child(2){
-    padding: 1.3rem 2.2rem;
+    padding: 1.3rem 2rem;
+
 }
 
 #room header .buttons .button:nth-child(2) img{
@@ -34,7 +35,10 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
     width: 2rem;
     height: 2rem;
 }
-
+.button > a{
+    width: 17.3rem;
+    justify-content: flex-end;
+}
 /* ESTILIZANDO O FORMULARIO DE PERGUNTA */
 #question-form h2{
     font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
@@ -110,4 +114,15 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
     /* Centralizando icones e texto do marcar e excluir */
     display: flex;
     align-items: center;
+}
+.question-wrapper .actions > a > img{
+    /* Separando o icone do texto do marcar e excluir */
+    margin-right: .8rem;
+}
+.question-wrapper .actions > a + a{
+    /* Não é ideial deixar margin sem necessidades no css 
+    + a = Serve para sinalizar que vamos atacar o segundo "a"
+    */
+    margin-left: 2.4em;
+
 }
