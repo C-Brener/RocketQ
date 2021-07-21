@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="./styles/room.css" type="text/css" media="all">
         <link rel="stylesheet" href="./styles/global.css" type="text/css">
+        <link rel="stylesheet" href="./styles/modal.css" type="text/css">
 
         <!-- Importando Fontes do Google -->
         
@@ -61,7 +62,7 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/avatar.svg" alt="Avatar" srcset="">
+                                    <img src="assets/user.svg" alt="Avatar" srcset="">
                                 </div>
                                 <div class="question">
                                     <p>Qual a diferença entre Git e Github?</p>
@@ -81,7 +82,7 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/avatar.svg" alt="Avatar" srcset="">
+                                    <img src="assets/user.svg" alt="Avatar" srcset="">
                                 </div>
                                 <div class="question">
                                     <p>O que é NodeJS?</p>
@@ -101,10 +102,10 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/avatar.svg" alt="Avatar" srcset="">
+                                    <img src="assets/user.svg" alt="Avatar" srcset="">
                                 </div>
                                 <div class="question">
-                                    <p>O que é TypeScript?</p>
+                                    <p>O que fazer quando se está cansado, sem forças e sem vontade para continuar estudando, quando você sente que não há mais saida e já chegou em seu limite de conhecimento? Existe um limite para o tanto que você pode aprender?</p>
                                 </div>
                             </div>
                             <div class="actions">
@@ -118,9 +119,45 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/user.svg" alt="Avatar" srcset="">
+                                </div>
+                                <div class="question">
+                                    <p>O que é TypeScript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                              
+                                <a href="#" class="delete">
+                                    <img src="assets/trash.svg" alt="" srcset="">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
+        </div>
+
+
+        <!-- MODAL -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que deseja excluir esta pergunta?</p>
+
+                <form action="">
+                    <label class="sr-only" for-id="password">Digite sua senha</label>
+                    <input type="password" id="password" name="password" placeholder="Insira sua senha"/>
+                    
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>

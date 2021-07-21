@@ -26,7 +26,7 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
 }
 
 #room header .buttons .button:nth-child(2){
-    padding: 1.3rem 2rem;
+    padding: 1.3rem 1.8rem;
 
 }
 
@@ -99,10 +99,22 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
 }
 .question-wrapper .question-content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
 }
 .question-wrapper .question-content p{
+    /*Configurando o paragrafo para ajustar a logo no tpo da imagem, isso serve para imagens grandes.
+    break-word = Parâmetro para que quando tenha muito texto ele nao quebre o layout definido
+    */
     margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
 }
 .question-wrapper .actions{
     /* Configurando posiconamento dos actions */
@@ -124,5 +136,12 @@ justify-content: space-between; /*Colocando um espaço entre a logo e os botões
     + a = Serve para sinalizar que vamos atacar o segundo "a"
     */
     margin-left: 2.4em;
+}
+/* QUESTIONS READS */
 
+.question-wrapper.read{
+    background: var(--grey-medium);
+}
+.question-wrapper.read .question-content .user{
+    background: var(--grey-blue);
 }
