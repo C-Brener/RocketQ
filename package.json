@@ -1,0 +1,27 @@
+{
+  "name": "rocketq",
+  "version": "1.0.0",
+  "description": "Projeto de gerenciamento de perguntas anônimas",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenermr/RocketQ.git"
+  },
+  "keywords": [],
+  "author": "Caique Brener de Brito Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenermr/RocketQ/issues"
+  },
+  "homepage": "https://github.com/brenermr/RocketQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

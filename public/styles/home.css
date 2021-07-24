@@ -13,7 +13,7 @@ header{
 #bg{
     grid-area: left;
 
-    background:url('../assets/home-bg-img.svg') no-repeat top/contain;
+    background:url('../images/home-bg-img.svg') no-repeat top/contain;
     background-position-x: -10rem;
 }
 main{
@@ -21,7 +21,7 @@ main{
 
     display: flex;
     align-items: center;
-    margin-top: -20rem;  /*Ajustando o texto "Entre" + ticket*/ 
+    margin-top: -10rem;  /*Ajustando o texto "Entre" + ticket*/ 
 
 }
 main .container{
@@ -38,14 +38,36 @@ input{
     padding: 0 1.6rem;
     height: 5rem;
     border-radius: 0.8rem;
+    outline: none;
 }
 
 input, button, .button{
     width: 100%;
     margin-bottom: 1.8rem;
-        padding-right:10.1 rem ;
-
 }
+
+/*Separator Line ou Separação por linha*/
+
+.separator{
+    display: flex; /*Colocando as linhas de separação divididas pelo "ou"*/
+    align-items: center; /*Alinhando o ou e as linhas*/
+    margin: 4rem 0;
+}
+.separator div:nth-child(1),
+.separator div:nth-child(3){ /*Usando o primeiro e terceiro filho da div separator*/
+    background: var(--grey-blue);
+    width: 100%;
+    height: 1px;
+}
+.separator div:nth-child(2){
+    font-family: 'Poppins', sans-serif; /*- Só será usada em casos especificos*/  
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--grey-blue);
+    padding: 0 1.35rem;
+    line-height: 0;
+}
+
 /*Create Balls*/
 
 .ball{
@@ -63,7 +85,6 @@ input, button, .button{
     width: 63.3rem;
     height: 63.3rem;
     right: -35rem;
-    grid-area: right;
 }
 
 .ball.bottom{

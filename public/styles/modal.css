@@ -1,4 +1,10 @@
-/*  */
+.modal-wrapper.active{
+
+    /* Criando a classe active para acionar a modal ao excluir a pergunta*/
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal-wrapper{
     position: fixed;
     width: 100vw;
@@ -10,6 +16,8 @@
 
     background: rgba(4, 9, 17, 0.8);
 
+    visibility: hidden;
+    opacity: 0;
 }
 
 /*  */
