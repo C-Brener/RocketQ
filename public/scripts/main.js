@@ -31,6 +31,14 @@ deleteButton.forEach(button =>{
 function handleClick(event, check = true){
     event.preventDefault()
 
+    const slug = check ? "check" : "delete" // verificação do action
+    const roomId = document.querySelector("#room-id").dataset.id // verificação da sala
+    const questionId = event.target.dataset.id //Pegando o id pelo event, pois por termos usado o event ele pega todas as informações do evento selecionado incluido o datta id que definimos manualmente.
+    
+
+
+    const form = document.querySelector(".modal form")
+    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`) // passando a constante slug para identificar se a action do modal é check ou delete
 
     // a interrogação server para verificar qual o valor booleano que a variavel retornará sabendo que o balor padrão é true
     modalTitle.innerHTML = check ? "Marcar como Lido" : "Excluir essa pergunta"

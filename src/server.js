@@ -13,7 +13,9 @@ server.use(express.static("public")) //Dizendo ao express para usar de forma est
 server.set('views', path.join(__dirname, 'views')) 
 // O dirname serve para dizer o nome da pasta
 
+server.use(express.urlencoded({extended: true}))
+
 server.use(route)
 
-server.listen(3000, () => console.log("Rodando"))
+server.listen(3000, () => console.log("Rocket.Q Start"))
 // ()=> arrow function - É uma forma de abrir uma função de forma simplificada 
