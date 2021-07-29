@@ -9,13 +9,14 @@ route.get('/', (req, res) => res.render("index", {page:'enter-room'}))
 
 route.get('/create-pass', (req, res) => res.render("index", {page:'create-pass'}))
 
-route.get('/room/:room', (req, res) => res.render("room"))
+route.post('/create-room', RoomController.create)
+route.get('/room/:room', RoomController.open) // passando a rota para fazer com que o id da sala seja dinamico
 
 
+route.post('/question/create/:room', QuestionController.create)
 //Formato que o formulario da modal tem que passar informação
 route.post('/question/:room/:question/:action/', QuestionController.index)
 
-route.post('/create-room', RoomController.create)
 
 
 //O req sempre retornara um objeto, dito isso o mesmo precisa estar dentro de chaves
