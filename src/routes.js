@@ -13,9 +13,9 @@ route.get('/room/:room', (req, res) => res.render("room"))
 
 
 //Formato que o formulario da modal tem que passar informação
-route.post('/room/:room/:question/:action/', QuestionController.index)
+route.post('/question/:room/:question/:action/', QuestionController.index)
 
-route.post('/room/create-room', RoomController.create)
+route.post('/create-room', RoomController.create)
 
 
 //O req sempre retornara um objeto, dito isso o mesmo precisa estar dentro de chaves

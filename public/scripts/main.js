@@ -38,7 +38,7 @@ function handleClick(event, check = true){
 
 
     const form = document.querySelector(".modal form")
-    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`) // passando a constante slug para identificar se a action do modal é check ou delete
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`) // passando a constante slug para identificar se a action do modal é check ou delete
 
     // a interrogação server para verificar qual o valor booleano que a variavel retornará sabendo que o balor padrão é true
     modalTitle.innerHTML = check ? "Marcar como Lido" : "Excluir essa pergunta"
