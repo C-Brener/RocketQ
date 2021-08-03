@@ -63,83 +63,52 @@
                     <h2 class="sr-only">Perguntas da Comunidade</h2>
                     
                     <div class="questions">
-                        <div class="question-wrapper">
-                            <div class="question-content" id="question-id" data-id="1">
-                                <div class="user">
-                                    <img src="/images/user.svg" alt="Avatar" srcset="">
+
+                        <% questions.forEach(question =>{ %>
+
+
+                            <div class="question-wrapper">
+                                <div class="question-content" id="question-id" data-id="1">
+                                    <div class="user">
+                                        <img src="/images/user.svg" alt="Avatar" srcset="">
+                                    </div>
+                                    <div class="question">
+                                        <p><%= question.title %> </p>
+                                    </div>
                                 </div>
-                                <div class="question">
-                                    <p>Qual a diferença entre Git e Github?</p>
-                                </div>
-                            </div>
-                            <div class="actions">
-                                <a href="#" class="check" data-id="2">
-                                    <img src="/images/check.svg" alt="" srcset="">
-                                    Marcar como lida
-                                </a>
-                                <a href="#" class="delete" data-id="2">
-                                    <img src="/images/trash.svg" alt="" srcset="">
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
-                        <div class="question-wrapper">
-                            <div class="question-content">
-                                <div class="user">
-                                    <img src="/images/user.svg" alt="Avatar" srcset="">
-                                </div>
-                                <div class="question">
-                                    <p>O que é NodeJS?</p>
+                                <div class="actions">
+                                    <a href="#" class="check" data-id="<%=question.id%>">
+                                        <img src="/images/check.svg" alt="" srcset="">
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete" data-id="<%=question.id%>">
+                                        <img src="/images/trash.svg" alt="" srcset="">
+                                        Excluir
+                                    </a>
                                 </div>
                             </div>
-                            <div class="actions">
-                                <a href="#" class="check" data-id="3">
-                                    <img src="/images/check.svg" alt="" srcset="">
-                                    Marcar como lida
-                                </a>
-                                <a href="#" class="delete" data-id="3">
-                                    <img src="/images/trash.svg" alt="" srcset="">
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
-                        <div class="question-wrapper">
-                            <div class="question-content">
-                                <div class="user">
-                                    <img src="/images/user.svg" alt="Avatar" srcset="">
+                        <% }); %>
+                        
+                        <% questionsRead.forEach(questionRead=>{ %>
+                            
+                            <div class="question-wrapper read">
+                                <div class="question-content">
+                                    <div class="user">
+                                        <img src="/images/user.svg" alt="Avatar" srcset="">
+                                    </div>
+                                    <div class="question">
+                                        <p><% questionRead.title %></p>
+                                    </div>
                                 </div>
-                                <div class="question">
-                                    <p>O que fazer quando se está cansado, sem forças e sem vontade para continuar estudando, quando você sente que não há mais saida e já chegou em seu limite de conhecimento? Existe um limite para o tanto que você pode aprender?</p>
-                                </div>
-                            </div>
-                            <div class="actions">
-                                <a href="#" class="check" data-id="4">
-                                    <img src="/images/check.svg" alt="" srcset="">
-                                    Marcar como lida
-                                </a>
-                                <a href="#" class="delete" data-id="4">
-                                    <img src="/images/trash.svg" alt="" srcset="">
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
-                        <div class="question-wrapper read">
-                            <div class="question-content">
-                                <div class="user">
-                                    <img src="/images/user.svg" alt="Avatar" srcset="">
-                                </div>
-                                <div class="question">
-                                    <p>O que é TypeScript?</p>
+                                <div class="actions">
+                                  
+                                    <a href="#" class="delete" data-id="<%= questionRead.id%>">
+                                        <img src="/images/trash.svg" alt="" srcset="">
+                                        Excluir
+                                    </a>
                                 </div>
                             </div>
-                            <div class="actions">
-                              
-                                <a href="#" class="delete" data-id="1">
-                                    <img src="/images/trash.svg" alt="" srcset="">
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
+                        <%}); %>
                     </div>
                 </section>
             </main>
