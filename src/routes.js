@@ -11,6 +11,7 @@ route.get('/create-pass', (req, res) => res.render("index", {page:'create-pass'}
 
 route.post('/create-room', RoomController.create)
 route.get('/room/:room', RoomController.open) // passando a rota para fazer com que o id da sala seja dinamico
+route.post('/enterroom', RoomController.enter)
 
 
 route.post('/question/create/:room', QuestionController.create)
